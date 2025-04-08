@@ -7,7 +7,7 @@ import androidx.room.RoomDatabase
 import com.example.bancodedados.dao.UsuarioDao
 import com.example.bancodedados.model.Usuario
 
-@Database(entities = [Usuario::class], version = 5)
+@Database(entities = [Usuario::class], version = 10)
 abstract class AppDatabase: RoomDatabase(){
 
     abstract fun usuarioDao(): UsuarioDao

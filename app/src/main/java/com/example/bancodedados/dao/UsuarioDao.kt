@@ -14,4 +14,15 @@ interface UsuarioDao {
 
     @Query("SELECT * FROM tabela_usuarios ORDER BY nome ASC")
     fun get(): MutableList<Usuario>
+
+    @Query("UPDATE tabela_usuarios SET nome = :novoNome, sobrenome = :novoSobrenome, idade = :novaIdade, celular = :novoCelular " +
+           "WHERE UID = :id")
+
+    fun atualizar(
+        id: Int,
+        novoNome: String,
+        novoSobrenome: String,
+        novaIdade: String,
+        novoCelular: String
+    )
 }

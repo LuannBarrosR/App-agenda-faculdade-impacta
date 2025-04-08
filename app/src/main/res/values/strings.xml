@@ -9,4 +9,5 @@
     <string name="txt_sobrenome">Gabriel</string>
     <string name="telefone">11 99999-5555</string>
     <string name="todo">TODO</string>
+    <string name="atualizar">Atualizar</string>
 </resources>
