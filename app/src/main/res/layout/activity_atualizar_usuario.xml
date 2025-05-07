@@ -11,25 +11,37 @@
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".AtualizarUsuario">
+        tools:context=".AtualizarUsuario"
+        android:background="@color/azul_marinho">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:background="@drawable/img_logo_impacta"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp">
+        </ImageView>
 
         <EditText
             android:id="@+id/editNome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/nome"
+            android:hint="Nome:"
+            android:textColorHint="@color/cinza"
+            android:backgroundTint="@color/azul"
             android:inputType="text"
             android:maxLines="1"
             android:padding="15dp"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="100dp"
             android:layout_marginEnd="20dp"
             />
         <EditText
             android:id="@+id/editSobrenome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Sobrenome"
+            android:hint="Sobrenome:"
+            android:textColorHint="@color/cinza"
+            android:backgroundTint="@color/azul"
             android:inputType="text"
             android:maxLines="1"
             android:padding="15dp"
@@ -39,12 +51,13 @@
             />
         <EditText
             android:id="@+id/editIdade"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Idade"
+            android:hint="Idade:"
+            android:textColorHint="@color/cinza"
+            android:backgroundTint="@color/azul"
             android:inputType="number"
             android:maxLength="3"
-            android:gravity="center"
             android:padding="15dp"
             android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
@@ -56,9 +69,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Celular"
+            android:textColorHint="@color/cinza"
+            android:backgroundTint="@color/azul"
             android:inputType="number"
             android:maxLength="15"
-            android:gravity="center"
             android:padding="15dp"
             android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
@@ -69,6 +83,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/atualizar"
+            android:backgroundTint="@color/azul"
             android:textStyle="bold"
             android:textSize="18sp"
             android:padding="15dp"

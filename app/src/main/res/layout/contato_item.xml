@@ -2,10 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-             android:layout_width="match_parent"
-             android:layout_margin="10dp"
-             android:background="@color/fundoV"
-             android:layout_height="wrap_content">
+    android:layout_width="match_parent"
+    android:background="@color/azul_marinho"
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/txtNome"
@@ -13,7 +12,7 @@
         android:layout_height="wrap_content"
         android:text="@string/Text_Nome"
         android:textSize="22sp"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textStyle="bold"
         android:layout_marginTop="20dp"
         android:layout_gravity="center" />
@@ -24,7 +23,7 @@
         android:layout_height="wrap_content"
         android:text="@string/txt_sobrenome"
         android:textSize="22sp"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textStyle="bold"
         android:layout_gravity="center" />
     <TextView
@@ -33,7 +32,7 @@
         android:layout_height="wrap_content"
         android:text="@string/text_Idade"
         android:textSize="22sp"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textStyle="bold"
         android:layout_gravity="center" />
 
@@ -43,7 +42,7 @@
         android:layout_height="wrap_content"
         android:text="@string/telefone"
         android:textSize="22sp"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textStyle="bold"
         android:layout_gravity="center" />
 
@@ -51,7 +50,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="end"
+        android:gravity="center"
         >
         <ImageView
             android:id="@+id/btdeletar"
@@ -63,7 +62,8 @@
             android:id="@+id/btAtualizar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_atualizar"/>
+            android:src="@drawable/ic_atualizar"
+            android:background="@color/fundoV"/>
 
     </LinearLayout>
 

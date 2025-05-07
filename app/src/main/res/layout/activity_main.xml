@@ -12,18 +12,43 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".CadastroUsuarios">
+    tools:context=".CadastroUsuarios"
+    android:background="@color/azul_marinho">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/img_agenda"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Agenda\nFaculdade Impacta"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginBottom="50dp">
+    </TextView>
 
     <Button
         android:id="@+id/btCadastrar"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="@string/btCadastrar"
         android:textSize="18sp"
+        android:backgroundTint="@color/laranja"
         android:textStyle="bold"
         android:textAllCaps="true"
         android:padding="10dp"
-        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
         />
 <androidx.recyclerview.widget.RecyclerView
     android:layout_width="match_parent"
