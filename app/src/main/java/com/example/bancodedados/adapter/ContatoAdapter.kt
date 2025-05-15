@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.bancodedados.AppDatabase
 import com.example.bancodedados.AtualizarUsuario
 import com.example.bancodedados.dao.UsuarioDao
-import com.example.bancodedados.databinding.ActivityMainBinding
+import com.example.bancodedados.databinding.FirstScreenBinding
 import com.example.bancodedados.databinding.ContatoItemBinding
 import com.example.bancodedados.model.Usuario
 import kotlinx.coroutines.CoroutineScope
@@ -51,6 +51,8 @@ class ContatoAdapter(private val context: Context, private val listaUsuarios: Mu
 
                 withContext(Dispatchers.Main){
                     notifyDataSetChanged()
+
+
                 }
 
            }

@@ -8,8 +8,9 @@ import androidx.lifecycle.MutableLiveData
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.bancodedados.adapter.ContatoAdapter
 import com.example.bancodedados.dao.UsuarioDao
-import com.example.bancodedados.databinding.ActivityMainBinding
+import com.example.bancodedados.databinding.FirstScreenBinding
 import com.example.bancodedados.model.Usuario
+import com.example.bancodedados.RegistrationActivity
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -17,7 +18,7 @@ import kotlinx.coroutines.withContext
 
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityMainBinding
+    private lateinit var binding: FirstScreenBinding
     private lateinit var usuarioDao: UsuarioDao
     private lateinit var contatoAdapter: ContatoAdapter
     private val _listaUsuario = MutableLiveData<MutableList<Usuario>>()
@@ -25,7 +26,7 @@ class MainActivity : AppCompatActivity() {
     @SuppressLint("NotifyDataSetChanged")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = FirstScreenBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         CoroutineScope(Dispatchers.IO).launch {
@@ -48,6 +49,11 @@ class MainActivity : AppCompatActivity() {
         binding.btCadastrar.setOnClickListener {
             val navegarTelaCadastro = Intent(this, CadastroUsuarios::class.java)
             startActivity(navegarTelaCadastro)
+        }
+
+        binding.btnImcapp.setOnClickListener {
+            val navegarTelaCadastroIMC = Intent(this, RegistrationActivity::class.java)
+            startActivity(navegarTelaCadastroIMC)
         }
 
     }
@@ -80,4 +86,6 @@ class MainActivity : AppCompatActivity() {
         val listaUsuarios: MutableList<Usuario> = usuarioDao.get()
         _listaUsuario.postValue(listaUsuarios)
     }
+
+
 }

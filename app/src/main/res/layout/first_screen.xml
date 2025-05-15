@@ -25,11 +25,11 @@
 
     </ImageView>
 
-    <TextView
+        <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Agenda\nFaculdade Impacta"
+        android:text="Agenda \nde \nIndice de Massa Corporal\n\nFaculdade Impacta"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textStyle="bold"
@@ -50,6 +50,15 @@
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
         />
+
+    <Button
+        android:id="@+id/btn_imcapp"
+        android:text="IMC Aplicativo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/cinza"
+        android:layout_gravity="center">
+    </Button>
 <androidx.recyclerview.widget.RecyclerView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"

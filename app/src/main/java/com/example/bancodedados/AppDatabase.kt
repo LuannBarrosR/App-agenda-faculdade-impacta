@@ -7,12 +7,12 @@ import androidx.room.RoomDatabase
 import com.example.bancodedados.dao.UsuarioDao
 import com.example.bancodedados.model.Usuario
 
-@Database(entities = [Usuario::class], version = 10)
+@Database(entities = [Usuario::class], version = 2402111)
 abstract class AppDatabase: RoomDatabase(){
 
     abstract fun usuarioDao(): UsuarioDao
     companion object{
-        private const val DATABASE_NOME = "DB2_USUARIOS"
+        private const val DATABASE_NOME = "DB_LUAN_ROSA_3ADS_BN"
 
         @Volatile
         private var INSTANCE: AppDatabase? = null
